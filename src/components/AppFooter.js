@@ -12,7 +12,7 @@ function AppFooter({ info }) {
       <FooterColumn>
         <FooterList>
           <FooterItem>
-            <FooterLink href={github}>
+            <FooterLink href={github} target='_blank'>
               <i class='fab fa-github'></i>
             </FooterLink>
           </FooterItem>
