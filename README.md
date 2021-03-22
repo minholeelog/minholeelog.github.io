@@ -22,8 +22,8 @@
 
 ### Partials
 
-- [ ] Header
-- [ ] Footer
+- [x] Header
+- [x] Footer
 
 ### Components
 
@@ -35,7 +35,5 @@
 - [ ] 영문 웹 페이지 제작
 
 ## ✅ Todo
-
-- [ ] 기본 템플릿 완료 (~ 21/03/14)
 
 ## 📌 Issues
