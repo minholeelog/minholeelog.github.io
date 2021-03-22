@@ -4,11 +4,24 @@ import styled from "styled-components";
 const date = new Date();
 const currentYear = date.getFullYear();
 
-function AppFooter() {
+function AppFooter({ info }) {
+  const { email, github } = info;
   return (
     <FooterContainer>
       <FooterColumn>{currentYear} Lee Minho All rights reserved.</FooterColumn>
       <FooterColumn>
+        <FooterList>
+          <FooterItem>
+            <FooterLink href={github}>
+              <i class='fab fa-github'></i>
+            </FooterLink>
+          </FooterItem>
+          <FooterItem>
+            <FooterLink href={email}>
+              <i class='fas fa-at'></i>
+            </FooterLink>
+          </FooterItem>
+        </FooterList>
         <select name='' disabled>
           <option value='ko'>한국어</option>
           <option value='en'>English</option>
@@ -25,12 +38,29 @@ const FooterContainer = styled.footer`
   position: absolute;
   bottom: 0;
   right: 50;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 0px;
 `;
 
-const FooterColumn = styled.div``;
+const FooterColumn = styled.div`
+  margin: 0 auto;
+  display: flex;
+`;
+
+const FooterList = styled.ul`
+  display: flex;
+`;
+
+const FooterItem = styled.li`
+  margin-right: 15px;
+`;
+
+const FooterLink = styled.a`
+  &:hover {
+    color: #184059;
+  }
+`;
 
 export default AppFooter;

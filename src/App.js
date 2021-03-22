@@ -4,12 +4,18 @@ import AppHeader from "./components/AppHeader";
 import Router from "./routes/Router";
 import "./assets/styles/global.css";
 
+const info = {
+  email: "mailto:minholee.log@gmail.com",
+  github: "https://www.github.com/minholeelog",
+  username: "minholeelog",
+};
+
 function App() {
   return (
     <div className='App'>
-      <AppHeader />
+      <AppHeader info={info} />
       <Router />
-      <AppFooter />
+      <AppFooter info={info} />
     </div>
   );
 }

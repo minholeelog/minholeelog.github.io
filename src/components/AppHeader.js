@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import avatar from "../assets/images/avatar.png";
 
-const AppHeader = () => {
+const AppHeader = ({ info }) => {
+  const { github } = info;
   return (
     <HeaderContainer>
       <HeaderNav>
@@ -23,7 +24,7 @@ const AppHeader = () => {
             <Linker to='/projects'>Projects</Linker>
           </NavItem>
           <NavItem>
-            <OuterLink href='https://www.github.com/minholeelog' target='_blank' rel='noreferrer'>
+            <OuterLink href={github} target='_blank' rel='noreferrer'>
               GitHub
             </OuterLink>
           </NavItem>
