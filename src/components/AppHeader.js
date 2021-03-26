@@ -10,6 +10,7 @@ const AppHeader = ({ info }) => {
       <HeaderNav>
         <Home to='/' exact>
           <Logo />
+          <Title>minholee.log</Title>
         </Home>
         <NavList>
           <NavItem>
@@ -40,21 +41,35 @@ const HeaderContainer = styled.header`
   display: flex;
   padding: 10px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: rgba(245, 245, 245, 0.6);
+  backdrop-filter: blur(4px);
+  position: sticky;
+  top: 0;
 `;
 
 const HeaderNav = styled.nav`
-  width: 90%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  backdrop-filter: blur(4px);
 `;
 
-const Home = styled(NavLink)``;
+const Home = styled(NavLink)`
+  display: flex;
+  align-items: center;
+`;
 
 const Logo = styled.img.attrs({ src: avatar, alt: "Logo" })`
   width: 40px;
+`;
+
+const Title = styled.span`
+  font-size: 28px;
+  margin-left: 10px;
+  &:hover {
+    color: #79a3d9;
+  }
 `;
 
 const NavList = styled.ul`

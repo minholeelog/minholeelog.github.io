@@ -23,3 +23,14 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 91vh;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
