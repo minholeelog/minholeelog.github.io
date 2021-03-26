@@ -7,6 +7,11 @@
 ### ⚠ 제작중..
 #### https://minholeelog.github.io/
 
+### ♻ 기술 스택
+
+![front](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
+![deploy](https://img.shields.io/badge/Deploy-GitHub_Pages-blueviolet?style=for-the-badge&logo=github)
+
 ## 📝 계획
 
 ### 🕗 03/29 까지 웹 페이지 제작 완료 목표
