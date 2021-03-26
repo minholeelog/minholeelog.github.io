@@ -5,8 +5,11 @@
 ## 💻 둘러보기
 
 ### ⚠ 제작중..
+#### https://minholeelog.github.io/
 
 ## 📝 계획
+
+### 🕗 03/29 까지 웹 페이지 제작 완료 목표
 
 ### Routes
 
@@ -14,7 +17,7 @@
 - [x] Project
 - [x] About
 
-### Views
+### Pages
 
 - [ ] Home
 - [ ] Project
@@ -27,13 +30,22 @@
 
 ### Components
 
-- ⚠ 세부 계획 구상중..
+- [ ] Project
+- [ ] About
+- [x] Word Cloud
 
 ### etc.
 
-- [ ] 다크모드 대응
+- [x] Word Cloud 라이브러리 적용
+- [ ] Dark Mode 전환 대응
 - [ ] 영문 웹 페이지 제작
 
 ## ✅ Todo
+
+ - [x] 03/26 : GitHub pages 배포
+ - [ ] 03/27 : About Page 스타일링 완료 
+ - [ ] 03/27 : Project Page 스타일링 완료
+ - [ ] 03/28 : Project Component 완료
+ - [ ] 03/29 : 포트폴리오 페이지 1차 완료
 
 ## 📌 Issues
