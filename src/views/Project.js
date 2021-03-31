@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const projects = [
   {
     id: 1,
-    title: 'Parking Factory 1',
+    title: 'Parking Factory1',
     description: '주차장 입,출차 무인 정산 시스템',
     stack: 'JavaScript, Node.js, MySQL, CSS',
     repository: 'https://github.com/minholeelog/parking-factory-v1.0',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Parking Factory 2',
+    title: 'Parking Factory2',
     description: '주차장 입,출차 무인 정산 시스템',
     stack: 'JavaScript, Node.js, MySQL, CSS',
     repository: 'https://github.com/minholeelog/parking-factory-v1.0',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Parking Factory 3',
+    title: 'Parking Factory3',
     description: '주차장 입,출차 무인 정산 시스템',
     stack: 'JavaScript, Node.js, MySQL, CSS',
     repository: 'https://github.com/minholeelog/parking-factory-v1.0',
@@ -32,7 +32,7 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Project = () => {
   return (
     <main className="main">
       <h1>💬 준비중...</h1>
@@ -43,7 +43,7 @@ const Projects = () => {
               <ProjectItem key={project.id}>
                 <ProjectLink
                   to={{
-                    pathname: '/detail',
+                    pathname: `/project/${project.id}`,
                     state: {
                       id: project.id,
                       title: project.title,
@@ -96,4 +96,4 @@ const ProjectThumbnail = styled.img`
   }
 `;
 
-export default Projects;
+export default Project;

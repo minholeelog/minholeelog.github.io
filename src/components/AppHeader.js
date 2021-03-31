@@ -1,31 +1,31 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import avatar from "../assets/images/avatar.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import avatar from '../assets/images/avatar.png';
 
 const AppHeader = ({ info }) => {
   const { github } = info;
   return (
     <HeaderContainer>
       <HeaderNav>
-        <Home to='/' exact>
+        <Home to="/" exact>
           <Logo />
           <Title>minholee.log</Title>
         </Home>
         <NavList>
           <NavItem>
-            <Linker to='/' exact>
+            <Linker to="/" exact>
               Home
             </Linker>
           </NavItem>
           <NavItem>
-            <Linker to='/about'>About</Linker>
+            <Linker to="/about">About</Linker>
           </NavItem>
           <NavItem>
-            <Linker to='/projects'>Projects</Linker>
+            <Linker to="/project">Projects</Linker>
           </NavItem>
           <NavItem>
-            <OuterLink href={github} target='_blank' rel='noreferrer'>
+            <OuterLink href={github} target="_blank" rel="noreferrer">
               GitHub
             </OuterLink>
           </NavItem>
@@ -60,7 +60,7 @@ const Home = styled(NavLink)`
   align-items: center;
 `;
 
-const Logo = styled.img.attrs({ src: avatar, alt: "Logo" })`
+const Logo = styled.img.attrs({ src: avatar, alt: 'Logo' })`
   width: 40px;
 `;
 
