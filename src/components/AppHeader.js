@@ -45,6 +45,7 @@ const HeaderContainer = styled.header`
   backdrop-filter: blur(4px);
   position: sticky;
   top: 0;
+  z-index: 9;
 
   @media screen and (max-width: 768px) {
     height: 40px;
@@ -137,9 +138,6 @@ const OuterLink = styled.a`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-  @media screen and (max-width: 480px) {
     display: none;
   }
 `;

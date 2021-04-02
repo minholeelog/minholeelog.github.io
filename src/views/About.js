@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { infos, frontSkills, etcSkills } from './Infos';
 
 const About = () => {
   return (
@@ -10,22 +11,14 @@ const About = () => {
           <InnerColumn>
             <AboutRow>
               <h3>personal info</h3>
-              <AboutList>
-                <i className="fas fa-user"></i>
-                <AboutContent>이민호</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fas fa-phone"></i>
-                <AboutContent>010) 8436-4785</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fas fa-at"></i>
-                <AboutContent>minholee.log@gmail.com</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-github"></i>
-                <AboutContent>minholeelog</AboutContent>
-              </AboutList>
+              {infos.map((item) => {
+                return (
+                  <AboutList key={item.id}>
+                    <i className={item.icon}></i>
+                    <AboutContent>{item.content}</AboutContent>
+                  </AboutList>
+                );
+              })}
             </AboutRow>
             <AboutRow>
               <h3>education</h3>
@@ -45,37 +38,25 @@ const About = () => {
           <InnerColumn>
             <AboutRow>
               <h3>frontend</h3>
-              <AboutList>
-                <i className="fab fa-js-square"></i>
-                <AboutContent>ES6 문법, 클래스에 대한 이해</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-react"></i>
-                <AboutContent>함수형 컴포넌트, 훅스에 대한 이해</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-vuejs"></i>
-                <AboutContent>디렉티브와 컴포넌트 활용</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-html5"></i>
-                <AboutContent>의미있는 태그를 활용한 마크업</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-css3-alt"></i>
-                <AboutContent>Grid, Flex-box를 활용</AboutContent>
-              </AboutList>
+              {frontSkills.map((item) => {
+                return (
+                  <AboutList key={item.id}>
+                    <i className={item.icon}></i>
+                    <AboutContent>{item.content}</AboutContent>
+                  </AboutList>
+                );
+              })}
             </AboutRow>
             <AboutRow>
               <h3>etc.</h3>
-              <AboutList>
-                <i className="fab fa-node-js"></i>
-                <AboutContent>라우터, 템플릿 엔진 활용</AboutContent>
-              </AboutList>
-              <AboutList>
-                <i className="fab fa-git-square"></i>
-                <AboutContent>형상 관리를 위한 기본</AboutContent>
-              </AboutList>
+              {etcSkills.map((item) => {
+                return (
+                  <AboutList key={item.id}>
+                    <i className={item.icon}></i>
+                    <AboutContent>{item.content}</AboutContent>
+                  </AboutList>
+                );
+              })}
             </AboutRow>
           </InnerColumn>
         </AboutColumn>
