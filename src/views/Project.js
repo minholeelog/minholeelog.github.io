@@ -70,10 +70,19 @@ const Project = () => {
 
 const ProjectContainer = styled.div`
   width: 80%;
-  height: 80vh;
+  /* min-height: 80vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const ProjectList = styled.ul`
@@ -91,7 +100,7 @@ const ProjectItem = styled.li`
   margin: 0 20px;
 
   @media screen and (max-width: 768px) {
-    margin: 20px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -106,6 +115,14 @@ const ProjectThumbnail = styled.img`
     cursor: pointer;
     transform: scale(1.1);
     opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 40vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 50vw;
   }
 `;
 

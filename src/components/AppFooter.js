@@ -35,7 +35,7 @@ const Footer = styled.footer`
   width: 100%;
   height: 65px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 0px;
-
+  padding: 30px;
   @media screen and (max-width: 480px) {
     height: 20px;
   }
@@ -60,9 +60,6 @@ const FooterColumn = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 5px;
   }
 `;
 

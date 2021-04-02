@@ -29,9 +29,14 @@ const About = () => {
             </AboutRow>
             <AboutRow>
               <h3>education</h3>
-              <AboutList>2020.10 구공팩토리 수료</AboutList>
-              <AboutList>2017.02 한국교통대 컴퓨터정보공학 학사</AboutList>
-              <AboutList>2016.07 정보처리기사 취득</AboutList>
+              <AboutList>
+                <i className="fas fa-university"></i>
+                <AboutContent>2020.10 구공팩토리 수료</AboutContent>
+              </AboutList>
+              <AboutList>
+                <i className="fas fa-certificate"></i>
+                <AboutContent>2016.07 정보처리기사 취득</AboutContent>
+              </AboutList>
             </AboutRow>
           </InnerColumn>
         </AboutColumn>
@@ -46,9 +51,7 @@ const About = () => {
               </AboutList>
               <AboutList>
                 <i className="fab fa-react"></i>
-                <AboutContent>
-                  함수형 컴포넌트, 훅스와 라우터에 대한 이해
-                </AboutContent>
+                <AboutContent>함수형 컴포넌트, 훅스에 대한 이해</AboutContent>
               </AboutList>
               <AboutList>
                 <i className="fab fa-vuejs"></i>
@@ -60,7 +63,7 @@ const About = () => {
               </AboutList>
               <AboutList>
                 <i className="fab fa-css3-alt"></i>
-                <AboutContent>Grid, Flex-box를 활용한 레이아웃</AboutContent>
+                <AboutContent>Grid, Flex-box를 활용</AboutContent>
               </AboutList>
             </AboutRow>
             <AboutRow>
@@ -71,7 +74,7 @@ const About = () => {
               </AboutList>
               <AboutList>
                 <i className="fab fa-git-square"></i>
-                <AboutContent>형상 관리를 위한 기본적인 사용 방법</AboutContent>
+                <AboutContent>형상 관리를 위한 기본</AboutContent>
               </AboutList>
             </AboutRow>
           </InnerColumn>
@@ -121,6 +124,9 @@ const AboutList = styled.ul`
 const AboutContent = styled.span`
   display: inline-block;
   margin-left: 8px;
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
 `;
 
 export default About;
