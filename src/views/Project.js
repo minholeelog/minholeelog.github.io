@@ -35,6 +35,7 @@ const projects = [
 const Project = () => {
   return (
     <main className="main">
+      <h1>💬 준비중...</h1>
       <ProjectContainer>
         <ProjectList>
           {projects.map((project) => {
@@ -89,9 +90,11 @@ const ProjectThumbnail = styled.img`
   width: 300px;
   border-radius: 8px;
   transition: 0.3s;
+  opacity: 0.8;
   &:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 1;
   }
 `;
 
